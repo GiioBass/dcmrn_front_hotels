@@ -150,12 +150,5 @@ Este proyecto se comunica con una API en Laravel. La URL base de la API se debe 
 
 Si este error ocurre, la aplicación mostrará un mensaje de error indicando que la combinación ya existe en el hotel.
 
-## Próximos Pasos
-
-- Mejorar la validación en el frontend para evitar enviar combinaciones de habitación-acomodación duplicadas.
-- Implementar la opción de edición de habitaciones.
-- Agregar confirmaciones antes de eliminar habitaciones.
-- Implementar tests para asegurar el correcto funcionamiento de la funcionalidad.
-
 Si tienes más detalles o quieres que agregue algo, dime. 😉
 
