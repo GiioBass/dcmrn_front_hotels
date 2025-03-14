@@ -36,6 +36,7 @@ Sigue estos pasos para instalar y configurar el proyecto en tu entorno local:
    
    Si en el futuro es necesario agregar variables de entorno, se pueden definir en un archivo `.env` en la raíz del proyecto:
    
+   por defecto los endpoints apuntan a http://127.0.0.1:8000
    ```sh
    VITE_API_BASE_URL=http://127.0.0.1:8000/api/v1
    ```
