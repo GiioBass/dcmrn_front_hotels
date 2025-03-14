@@ -17,7 +17,7 @@ const HotelList = () => {
             setLoading(true);
             setError(null);
             try {
-                const response = await axios.get('http://dcmrnbackhotels-production.up.railway.app/api/v1/hotels');
+                const response = await axios.get('https://dcmrnbackhotels-production.up.railway.app/api/v1/hotels');
                 setHotels(response.data.data);
             } catch (error) {
                 setError(error);
