@@ -22,7 +22,7 @@ const HotelCreateForm = ({ onCreate, onClose }) => {
         e.preventDefault();
         setErrors({}); // Limpiar errores previos
         try {
-            const response = await axios.post('http://dcmrnbackhotels-production.up.railway.app/api/v1/hotels', hotel);
+            const response = await axios.post('https://dcmrnbackhotels-production.up.railway.app/api/v1/hotels', hotel);
             if (response.data.success) {
                 alert(response.data.message);
                 onCreate(response.data.data);

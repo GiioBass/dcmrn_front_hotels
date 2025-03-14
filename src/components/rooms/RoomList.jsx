@@ -20,7 +20,7 @@ const RoomList = () => {
         setLoading(true);
         setError(null);
         try {
-            const response = await axios.get(`http://dcmrnbackhotels-production.up.railway.app/api/v1/hotels/${hotelId}/rooms`);
+            const response = await axios.get(`https://dcmrnbackhotels-production.up.railway.app/api/v1/hotels/${hotelId}/rooms`);
             setRooms(response.data.data);
         } catch (error) {
             setError('Error al obtener las habitaciones.');
@@ -32,7 +32,7 @@ const RoomList = () => {
 
     const handleDeleteRoom = async (roomId) => {
         try {
-            await axios.delete(`http://dcmrnbackhotels-production.up.railway.app/api/v1/hotels/${hotelId}/rooms/${roomId}`, {
+            await axios.delete(`https://dcmrnbackhotels-production.up.railway.app/api/v1/hotels/${hotelId}/rooms/${roomId}`, {
                 headers: { 'Accept': 'application/json' }
             });
             setRooms(rooms.filter(room => room.id !== roomId)); // Elimina localmente la habitación

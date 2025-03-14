@@ -59,7 +59,7 @@ const RoomCreateRoom = () => {
     
         try {
             await axios.post(
-                `http://dcmrnbackhotels-production.up.railway.app/api/v1/hotels/${hotelId}/rooms`,
+                `https://dcmrnbackhotels-production.up.railway.app/api/v1/hotels/${hotelId}/rooms`,
                 { hotel_id: hotelId, rooms },
                 { headers: { 'Content-Type': 'application/json' } }
             );
