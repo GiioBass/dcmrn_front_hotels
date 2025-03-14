@@ -44,7 +44,7 @@ const HotelList = () => {
     };
 
     const handleViewRooms = (hotelId) => {
-        navigate(`/hotels/${hotelId}/rooms`); // Redirige al componente de habitaciones del hotel
+        navigate(`/hotels/${hotelId}/rooms`); 
     };
 
     if (loading) {
